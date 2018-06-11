@@ -32,7 +32,7 @@ namespace RestStack.Tests
 
 		public RestResponse DeletePost(Post post)
 		{
-			return Delete($"/posts{post.Id}");
+			return Delete($"/posts/{post.Id}");
 		}
 	}
 }
