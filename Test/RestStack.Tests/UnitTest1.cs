@@ -68,7 +68,7 @@ namespace RestStack.Tests
 			var post = _client.GetPost(1);
 			var deletePost = _client.DeletePost(post);
 
-			Assert.AreEqual(deletePost.StatusCode, HttpStatusCode.NotFound);
+			Assert.AreEqual(deletePost.StatusCode, HttpStatusCode.OK);
 			Assert.IsInstanceOfType(deletePost, typeof(RestResponse));
 		}
 
